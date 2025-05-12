@@ -1,0 +1,4 @@
+python train.py --img 640 --batch 8 --epochs 50 --data traffic.yaml   --weights yolov5s.pt   --name traffic_signs
+
+python detect.py --weights runs/train/traffic_signs/weights/best.pt   --img 640 --source ./dataset/images/train/file20.png
+
